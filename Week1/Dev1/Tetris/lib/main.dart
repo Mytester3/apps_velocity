@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tetris/pages/home.dart';
+import 'package:tetris/pages/start.dart';
 import 'package:tetris/utils/routes.dart';
 import 'package:tetris/widgets/drawer.dart';
 import 'package:hive/hive.dart';
@@ -29,12 +30,12 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
 
-      initialRoute: "/", //this route will open first
-
+      initialRoute: Myroutes.startRoute, //this route will open first
       routes: {
         //creating routes for different pages in app
-        "/": (context) => HomePage(), //main root
+        Myroutes.homeRoute: (context) => HomePage(), //main root
         Myroutes.drawerRoute: (context) => DrawerPage(),
+        Myroutes.startRoute: (context) => StartPage(),
       },
     );
   }

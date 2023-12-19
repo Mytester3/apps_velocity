@@ -48,19 +48,6 @@ class _DrawerPageState extends State<DrawerPage> {
               padding: const EdgeInsets.all(0),
               child: Column(
                 children: [
-                  ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: Colors.white24,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
-                      ),
-                    ),
-                    title: Text(
-                      "User",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ),
                   SizedBox(
                     height: 20,
                   ),
@@ -71,7 +58,7 @@ class _DrawerPageState extends State<DrawerPage> {
                       size: 24,
                     ),
                     title: Text(
-                      "High Score: $highscore",
+                      "Record: $highscore",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
@@ -82,7 +69,7 @@ class _DrawerPageState extends State<DrawerPage> {
                       size: 24,
                     ),
                     title: Text(
-                      "About us",
+                      "About app",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     onTap: () {
@@ -103,7 +90,7 @@ class _DrawerPageState extends State<DrawerPage> {
                                       onPressed: () => Navigator.pop(context),
                                       icon: Icon(Icons.close)),
                                   Text(
-                                    'About us',
+                                    'About application',
                                     style: TextStyle(
                                         fontWeight: FontWeight.w700,
                                         fontSize: 20),
@@ -133,7 +120,7 @@ Unlock a plethora of customization options to personalize your gaming experience
                           });
                     },
                   ),
-                  ListTile(
+                  /*ListTile(
                     leading: Icon(
                       Icons.star,
                       color: Colors.white,
@@ -143,7 +130,7 @@ Unlock a plethora of customization options to personalize your gaming experience
                       "Give a rating",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
-                  ),
+                  ),*/
                 ],
               ))),
     );
