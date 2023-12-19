@@ -1,6 +1,5 @@
 import 'dart:math';
 
-
 import 'package:flutter/material.dart';
 
 import 'custom_radio_group.dart';
@@ -12,14 +11,15 @@ class QuizPage extends StatefulWidget {
     required this.title,
   });
 
-  List<Question> listQuiz;
-  String title;
+  final List<Question> listQuiz;
+  final String title;
 
   @override
   _QuizPageState createState() => _QuizPageState();
 }
 
-class _QuizPageState extends State<QuizPage>  with SingleTickerProviderStateMixin{
+class _QuizPageState extends State<QuizPage>
+    with SingleTickerProviderStateMixin {
   bool _showCorrectAnswers = false;
   bool isCheckCorrect = false;
 
@@ -59,7 +59,7 @@ class _QuizPageState extends State<QuizPage>  with SingleTickerProviderStateMixi
               ),
               SizedBox(height: 16),
               Container(
-                height: MediaQuery.of(context).size.height-300,
+                height: MediaQuery.of(context).size.height - 300,
                 child: ListView.builder(
                   shrinkWrap: true,
                   itemCount: widget.listQuiz.length,
