@@ -22,11 +22,9 @@ class ColorAndSize extends StatelessWidget {
               Row(
                 children: <Widget>[
                   ColorDot(
-                    color: Color(0xFF356C95),
+                    color: product.color,
                     isSelected: true,
                   ),
-                  ColorDot(color: Color(0xFFF8C078)),
-                  ColorDot(color: Color(0xFFA29B9B)),
                 ],
               ),
             ],
@@ -37,9 +35,9 @@ class ColorAndSize extends StatelessWidget {
             text: TextSpan(
               style: TextStyle(color: Color(0xFF535353)),
               children: [
-                TextSpan(text: "Size\n"),
+                TextSpan(text: "Size Average\n"),
                 TextSpan(
-                  text: "${product.size} cm",
+                  text: "${product.size}",
                   style: Theme.of(context)
                       .textTheme
                       .headline5!

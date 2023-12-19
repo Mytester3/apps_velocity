@@ -49,7 +49,7 @@ class Categories extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: Constants.kDefaultPadding / 4),
+                margin: EdgeInsets.only(top: 1),
                 width: 30,
                 height: 2,
                 color: controller.categorySelectedIndex() == index
